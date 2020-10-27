@@ -1,1 +1,6 @@
+include ':UnityClasses'
 include ':app'
+include ':unityLibrary'
+project(':unityLibrary').projectDir=new File('..\\UnityProject\\androidBuild\\unityLibrary')
+include ':unityLibrary2'
+project(':unityLibrary2').projectDir=new File('..\\UnityProject2\\androidBuild2\\unityLibrary')

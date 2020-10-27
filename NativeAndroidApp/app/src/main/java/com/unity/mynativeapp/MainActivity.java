@@ -51,6 +51,13 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent, 1);
     }
 
+    public void btnLoadUnity2(View v) {
+        isUnityLoaded = true;
+        Intent intent = new Intent(this, MainUnityActivity2.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivityForResult(intent, 1);
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == 1) isUnityLoaded = false;
